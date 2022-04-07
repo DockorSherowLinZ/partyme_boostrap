@@ -1,0 +1,57 @@
+// ===== HEADER =====
+/* 導覽列 */
+header  .header_nav-link {
+  padding: 0.5rem 1.5rem !important;
+}
+
+
+// ===== FOOTER =====
+footer{
+  background-image: url(../images/wave_bottom_all.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  .background{
+    padding-top: 25rem;
+    padding-bottom: 1rem;
+  }
+ 
+  /* footer連結 */
+  .footer_links{
+    display: flex;
+  }
+    ul li{
+      padding-bottom: 2.25rem;
+      a{
+        display: inline-block;
+        color: var(--white);
+      }
+    }
+
+  /* media     */
+  .media ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: calc( 100% - 5rem );
+    li {
+      padding: 2.25rem 0;
+    }
+  }
+
+  /* downapp */
+  .downapp ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: calc( 100% - 9rem );
+  }
+
+  /* 著作權 */
+  .copyright{
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    font-family: Helvetica;
+    padding: 0.75rem 0;
+  }
+}
+

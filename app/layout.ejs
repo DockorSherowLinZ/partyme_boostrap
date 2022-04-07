@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  
+  <body>
+    
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top p-0">
+      <div class="container-fluid" style="padding:0.75rem 7.5rem;">
+        <a class="navbar-brand p-0" href="./index.html">
+            <h1 class="logo p-0 m-0">
+            <img src="./assets/images/mainav_Logo.svg" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0 ms-auto" id="navbarNavAltMarkup">
+          <div class="navbar-nav"><!--flex-row-->
+            <a class="header_nav-link nav-link <%= current==='hot'?'active':''%>" href="./hot.html" aria-current="page">熱門話題</a>
+            <a class="header_nav-link nav-link <%= current==='pop_guide'?'active':''%>" href="./pop_guide.html">人氣嚮導</a>
+            <a class="header_nav-link nav-link <%= current==='topic_exploration'?'active':''%>" href="./topic_exploration.html">主題探索</a>
+            <a class="header_nav-link nav-link <%= current==='popular_cities'?'active':''%>" href="./popular_cities.html">熱門城市</a>
+            
+            <span class="btn disabled d-none d-lg-inline-block px-0">｜</span>
+            
+            <a class="header_nav-link nav-link <%= current==='signup_login'?'active':''%>" href="./signup_login.html">註冊會員</a>
+            <a class="btn btn-primary" href="./signup_login.html">登入</a>
+            <button class="header_nav-link btn translate d-flex align-items-center px-0 mx-2">
+              <i class="fa-solid fa-globe px-2"></i>
+              <span class="px-2">中文</span>
+              <i class="fa-solid fa-chevron-down px-2"></i>
+            </button>
+          </div>
+
+          <div class="d-flex align-items-center">
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <%- contents %>
+
+    <footer>
+      <div class="container">
+          <div class="background row row-cols-1 row-cols-xl-2 pb-0">
+              <div class="col text-center">
+                  <div class="footer_links row row-cols-xl-2">
+                      <div class="col">
+                          <ul class="list-unstyled">
+                              <li><a href="javascript:void(0)">關於我們</a></li>
+                              <li><a href="javascript:void(0)">平台政策</a></li>
+                              <li><a href="javascript:void(0)">隱私政策</a></li>
+                              <li><a href="javascript:void(0)">服務條款</a></li>
+                          </ul>
+                      </div>
+                      <div class="col">
+                          <ul class="list-unstyled">
+                              <li><a href="javascript:void(0)">重大消息</a></li>
+                              <li><a href="javascript:void(0)">活動快訊</a></li>
+                              <li><a href="javascript:void(0)">常見問題</a></li>
+                              <li><a href="javascript:void(0)">檢舉專區</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="subcribe col">
+                  <form class="search_bar input-group">
+                    <input type="email" class="form-control" placeholder="訂閱新資訊：example@email.com" aria-label="訂閱新資訊：example@email.com" aria-describedby="button-addon2">
+                    <button class="t2_r_ch btn btn-secondary text-white" type="button" id="button-addon2">訂閱</button>
+                  </form>
+
+                  <div class="media">
+                      <ul class="list-unstyled">
+                          <li role='button'><img src="./assets/images/Youtube.png" alt="Youtube"></li>
+                          <li role='button'><img src="./assets/images/Twitter.png" alt="Twitter"></li>
+                          <li role='button'><img src="./assets/images/Facebook.png" alt="Facebook"></li>
+                          <li role='button'><img src="./assets/images/Instagram.png" alt="Instagram"></li>
+                          <li role='button'><img src="./assets/images/Line.png" alt="Line"></li>
+                          <li role='button'><img src="./assets/images/Kakao Talk.png" alt="Kakao"></li>
+                          <li role='button'><img src="./assets/images/Wechat.png" alt="Wechat"></li>
+                      </ul>
+                  </div>
+                  <div class="downapp">
+                      <ul class="list-unstyled">
+                          <li role="button"><img src="./assets/images/GooglePlay.png" alt="GooglePlay"></li>
+                          <li role="button"><img src="./assets/images/AppStore.png" alt="AppStore"></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <div class="t3_r_ch">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</div>
+          <div class="t3_r_ch">COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</div>
+      </div>
+  </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

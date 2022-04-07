@@ -1,0 +1,385 @@
+#page_index {
+  section.master_vision{
+    background:url(../images/asian_blogger_travel.jpg) no-repeat top 0 center;
+    width: 100%;
+    object-fit: contain;
+    // 搜尋板塊
+    .search{
+      display: flex;
+      flex-direction: column;
+      height: 595px;
+      justify-content: center;
+  
+      // 主標題文字
+      .h2_b_ch,.h4_r_ch{
+        color: var(--white);
+        text-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.8);
+      }
+      .h4_r_ch{
+        margin-bottom: 2rem;;
+      }
+    }
+  }
+
+  //熱門話題
+  section.hot {
+    // 🐇魯貓貓
+    .video {
+      height: 150px;
+      cursor: pointer;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .carousel{
+      margin-bottom: 2rem;
+      position: relative;
+      height: 376px;
+      .video{
+        // height: 376px;
+        overflow: hidden;
+        border-radius: 1rem;
+      }
+      iframe{
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+    }
+
+    // 輪播影片時間長度顯示框
+    .card {
+      background: url(https://i.ytimg.com/vi/WUwFl_mQFyQ/maxresdefault.jpg) no-repeat center / cover;
+      .video_length {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        span {
+          background-color: rgba(0, 0, 0, 0.7);
+          display: inline-block;
+          padding: 0.5rem 0.75rem;
+          color: #fff;
+          border-radius: 0.5rem;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    // 輪播影片介紹卡片
+    .container{
+      .card{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    // 影片內容欄
+    .card .content{
+      display: flex;
+      border-radius: 1rem;
+      background-image: linear-gradient(90deg,rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%,transparent );
+    }
+
+    // 穿透col，選得到裡面的物件。
+    .card{
+      // pointer-events: none;
+      .content {
+        .info{
+          margin: 1.5rem 1.5rem 0 1rem;
+          display: flex;
+          flex-direction: column;
+          flex: 1 0 0;
+          color: var(--white);
+        }
+        h3{
+          margin-bottom: 1.5rem;
+          word-wrap: break-word;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        p{
+          margin-bottom: 2rem;
+          word-wrap: break-word;
+          display: -webkit-box;
+          -webkit-line-clamp: 7;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        span{
+          margin-top: auto;
+          margin-bottom: 1rem;
+        }
+      }
+
+    }
+  }
+
+  // 人氣嚮導
+  section.pop_guide {
+    .guide {
+      display: flex;
+      align-items: center;
+    }
+    // 嚮導輪播先用圖片替代
+    .carousel{
+      background: url(../images/pop_guides_bg.jpg) no-repeat center center;
+    }
+    .card.profile_active{
+      max-width: 50%;
+      margin: auto;
+    }
+    // 分數
+    .score{
+      color: var(--info);
+    }
+    // 響導輪播
+      // 按鈕
+    .carousel{
+      position: relative;
+      margin-bottom: 4rem;
+      button{
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        z-index: 2;
+      }
+    }
+    // 響導簡介
+    .card .content{
+      padding: 1.5rem;
+      .guide{
+        display: flex;
+        margin-bottom: 1rem;
+        .achievement h4{
+          margin-bottom: 0.5em;
+        }
+      }
+      p{
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+    // 名字
+    .content .guide .name{
+      margin-right: 1rem;
+    }
+    .container .guides .name{
+      margin-bottom: 0.5rem;
+    }
+    // 節點
+    .detial{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .contact{
+        display: flex;
+        .item:hover{
+          color: var(--hover);
+        }
+      }
+    }
+    // 響導欄
+    .guides {
+      .cover{
+        margin-bottom: 1rem;
+      }
+      .card {
+        .guide{
+          display: flex;
+          flex-direction: column;
+        }
+        .score{
+          margin-bottom: 1rem;
+          i{
+            margin-right: 0.5rem;
+          }
+        }
+        h4{
+          margin-bottom: 0.5rem;
+        }
+        p{
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+    // 按鈕
+    .guides .card .contact{
+      // margin: 0 auto;
+      button{
+        position: relative;
+        font-size: 12px;
+      }
+    }
+  }
+
+  // 主題探索
+  section.topic_exploration {
+    .background{
+      position: relative;
+      .row:last-of-type{
+        margin-bottom: 2rem;
+      }
+      .scoll_effect{    
+        height: 100%;     
+        position: absolute;    
+        top: 2%;
+        left: 26%;
+        img{
+          object-fit: cover;
+          vertical-align: top;
+          height: 100%;
+        }
+      }
+
+    }
+    // 圖形圖片
+    .container {
+      .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        transform: scale(1);
+        transition: 0.1s ease-in-out; 
+        &:hover{
+          color: var(--hover);
+          transform: scale(1.2);
+        }
+        .topic,h3{
+          position: relative;
+        }
+        .topic{
+          border-radius: 50%;
+          overflow: hidden;
+          cursor: pointer;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          vertical-align: top;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      // 圖形圖片移動位置
+      // 知名景點
+      .row {
+        .attractions .topic{
+          padding-top: 47%;
+          width: 47%;
+          // right: 40px;
+        }
+        .attractions h3{
+          // right: 40px;
+        }
+        // 派對聚會
+        .party .topic{
+          padding-top: 63%;
+          width: 63%;
+        }
+        // 夯翻美食
+        .meals .topic{
+          padding-top: 80%;
+          width: 80%;
+          // right: 53px;
+          top: 30px;
+        }
+        .meals h3{
+          // right: 53px;
+          top: 30px;
+        }
+        // 手作DIY
+        .diy .topic{
+          padding-top: 52%;
+          width: 52%;
+          // left: 130px;
+        }
+        .diy h3{
+          // left: 130px;
+        }
+        // 親子旅遊
+        .pctravel .topic{
+          padding-top: 45%;
+          width: 45%;
+          top: 30px;
+          // right: 80px;
+        }
+        .pctravel h3{
+          top: 30px;
+          // right: 80px;
+        }
+        // 戶外露營
+        .camping .topic{
+          padding-top: 72%;
+          width: 72%;
+          // left: 75px;
+          top: 20px;
+        }
+        .camping h3{
+          // left: 75px;
+          top: 20px;
+        }
+      }
+    }
+  }
+
+  // 熱門城市
+  section.popular_cities {
+    .recommend{
+      position: relative;
+      &.row{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+      }
+    }
+    // 使用 components 做國家卡片
+    .container .map{
+      background: url(../images/map.svg) no-repeat;
+      background-size: cover;
+      height: 410px;
+      object-fit: cover;
+      margin-bottom: 2rem;
+    }
+    // 用 first-of-type 才能選到 card 的子層
+    .recommend.row .card {
+      &:first-of-type .cover {
+        background: url(../images/Taipei.jpg);
+        background-size: cover;
+      }
+      &:nth-of-type(2) .cover {
+        background: url(../images/Jiangsu.jpg);
+        background-size: cover;
+      }
+      &:nth-of-type(3) .cover {
+        background: url(../images/Maldives.jpg);
+        background-size: cover;
+      }
+      &:nth-of-type(4) .cover {
+        background: url(../images/Xian.jpg);
+        background-size: cover;
+      }
+      &:nth-of-type(5) .cover {
+        background: url(../images/Manhattan.jpg);
+        background-size: cover;
+      }
+    }
+    // more
+    .recommend .more{
+      margin-bottom: -2rem;
+    }
+  }
+}

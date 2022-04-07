@@ -1,0 +1,7 @@
+@import "./helpers/color";       // :root 顏色
+@import "./helpers/fonts";       // 字體
+@import "./helpers/global";      // 全域設定(reset等)
+@import "./helpers/components";  // 元件
+
+@import './layout/layout.scss';  // 頁面－layout
+@import './layout/index.scss';   // 頁面－index
