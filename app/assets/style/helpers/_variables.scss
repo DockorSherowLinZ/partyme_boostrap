@@ -83,7 +83,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue !default; // $blue ;
-$secondary:     #18ACEF !default; // $gray-600 ;
+$secondary:     #18ACEF !default; // $gray-600
 $success:       $green  !default; // 
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -1099,7 +1099,7 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
+$card-border-width:                 0;//$border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;

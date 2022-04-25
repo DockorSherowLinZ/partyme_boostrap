@@ -382,4 +382,332 @@
       margin-bottom: -2rem;
     }
   }
+  
+  @media screen and (max-width:1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  
+    /* 主題探索 */
+  
+    /* 圖片hover效果 */
+    .topic_exploration .container .col:hover {
+      color: var(--hover);
+      transform: scale(1);
+    }
+  
+    .topic_exploration .container .col .topic {
+      overflow: hidden;
+    }
+  
+    .topic_exploration .container .col .topic img {
+      transition: 0.3s all;
+    }
+  
+    .topic_exploration .container .col .topic:hover img {
+      transform: scale(1.2);
+    }
+  
+    .topic_exploration .container .background .row .col {
+      margin: auto;
+      justify-content: center;
+    }
+  
+    .topic_exploration .container .background .row .col h3 {
+      font-size: 2.25rem;
+    }
+  
+    /* 圓形圖片移動位置 */
+    /* 知名景點 */
+    .topic_exploration .container .row .attractions .topic {
+      padding-top: 47%;
+      width: 47%;
+      // right: 2.5rem;
+    }
+  
+    /* 派對聚會 */
+    .topic_exploration .container .row .party .topic {
+      padding-top: 63%;
+      width: 63%;
+      // right: 2rem;
+    }
+  
+    /* 夯翻美食 */
+    .topic_exploration .container .row .meals .topic {
+      padding-top: 70%;
+      width: 70%;
+      top: 1.875rem;
+      // right: 3.125rem;
+    }
+  
+    .topic_exploration .container .row .meals h3 {
+      top: 1.875rem;
+      // right: 3.125rem;
+    }
+  
+    /* 手作DIY工坊 */
+    .topic_exploration .container .row .diy .topic {
+      padding-top: 52%;
+      width: 52%;
+      // left: 3.5rem;
+    }
+  
+    .topic_exploration .container .row .diy h3 {
+      // left: 3.5rem;
+    }
+  
+    /* 親子旅遊 */
+    .topic_exploration .container .row .pctravel .topic {
+      padding-top: 45%;
+      width: 45%;
+      top: 1.875rem;
+      // right: 5rem;
+    }
+  
+    .topic_exploration .container .row .pctravel h3 {
+      top: 1.875rem;
+      // right: 5rem;
+    }
+  
+    /* 戶外露營 */
+    .topic_exploration .container .row .camping .topic {
+      padding-top: 72%;
+      width: 72%;
+      top: 1.25rem;
+      // left: 2.75rem;
+    }
+  
+    .topic_exploration .container .row .camping h3 {
+      top: 1.25rem;
+      // left: 2.75rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:992px) {
+    section .container h2 {
+      font-size: 3rem;
+    }
+  
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+  
+    /* 回到頂端 */
+    .side_function {
+      right: 1rem;
+    }
+  
+  
+    /* 主題探索 */
+    .topic_exploration .container .background .row .col h3 {
+      font-size: 2.25rem;
+      margin-top: 0.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    /* 主題探索飛機背景圖 */
+    .topic_exploration .background .scoll_effect {
+      // left: 0;
+    }
+  
+    /* 圖片hover效果 */
+    .topic_exploration .container .col:hover {
+      transform: scale(1);
+    }
+  
+    /* 圖形圖片、文字間距與文字尺寸 */
+    /* 知名景點 */
+    .topic_exploration .container .row .attractions .topic {
+      padding-top: 57%;
+      width: 57%;
+      // right: 2.5rem;
+    }
+  
+    .topic_exploration .container .row .attractions h3 {
+      right: 2.5rem;
+    }
+  
+    /* 派對聚會 */
+    .topic_exploration .container .row .party .topic {
+      padding-top: 63%;
+      width: 63%;
+    }
+  
+    /* 夯翻美食 */
+    .topic_exploration .container .row .meals .topic {
+      padding-top: 72%;
+      width: 72%;
+      top: 30px;
+      // right: 1.5rem;
+    }
+  
+    .topic_exploration .container .row .meals h3 {
+      top: 30px;
+      // right: 1.5rem;
+    }
+  
+    /* 手作DIY工坊 */
+    .topic_exploration .container .row .diy .topic {
+      padding-top: 52%;
+      width: 52%;
+      // left: 3.75rem;
+    }
+  
+    .topic_exploration .container .row .diy h3 {
+      // left: 3.75rem;
+    }
+  
+    /* 親子旅遊 */
+    .topic_exploration .container .row .pctravel .topic {
+      padding-top: 45%;
+      width: 45%;
+      top: 30px;
+      // right: 5rem;
+    }
+  
+    .topic_exploration .container .row .pctravel h3 {
+      top: 30px;
+      // right: 5rem;
+    }
+  
+    /* 戶外露營 */
+    .topic_exploration .container .row .camping .topic {
+      padding-top: 62%;
+      width: 62%;
+      top: 20px;
+      // left: 2.5rem;
+    }
+  
+    .topic_exploration .container .row .camping h3 {
+      top: 20px;
+      // left: 2.5rem;
+    }  
+  }
+  
+  @media screen and (max-width:768px) {
+    section .container h2 {
+      font-size: 2.25rem;
+    }
+  
+    .container {
+      max-width: 720px;
+    }
+  
+    /* 主題探索 */
+    /* 主題探索飛機背景圖 */
+    .topic_exploration .background .scoll_effect {
+      // left: 0;
+    }
+  
+    .topic_exploration .container .background .row .col {
+      margin: auto;
+      justify-content: center;
+    }
+  
+    .topic_exploration .container .background .row .col h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    /* 圖形圖片、文字間距與文字尺寸 */
+    .topic_exploration .container .row .topic {
+      margin-bottom: 0.5rem;
+    }
+  
+    /* 圖片hover效果 */
+    .topic_exploration .container .col:hover {
+      transform: scale(1);
+    }
+  
+  
+    /* 圓形圖片移動位置 */
+    /* 知名景點 */
+    .topic_exploration .container .row .attractions .topic {
+      padding-top: 68%;
+      width: 68%;
+      // left: 1.875rem;
+    }
+  
+    .topic_exploration .container .row .attractions h3 {
+      // left: 1.875rem;
+    }
+  
+    /* 派對聚會 */
+    .topic_exploration .container .row .party .topic {
+      padding-top: 57%;
+      width: 57%;
+      // left: 3.125rem;
+    }
+  
+    .topic_exploration .container .row .party h3 {
+      // left: 3.125rem;
+    }
+  
+    /* 夯翻美食 */
+    .topic_exploration .container .row .meals .topic {
+      padding-top: 47%;
+      width: 47%;
+      // left: 5.3125rem;
+    }
+  
+    .topic_exploration .container .row .meals h3 {
+      // left: 5.3125rem;
+    }
+  
+    /* 手作DIY工坊 */
+    .topic_exploration .container .row .diy .topic {
+      padding-top: 49%;
+      width: 49%;
+      top: 1.875rem;
+      // left: 0;
+    }
+  
+    .topic_exploration .container .row .diy h3 {
+      top: 1.875rem;
+      // left: 0;
+    }
+  
+    /* 親子旅遊 */
+    .topic_exploration .container .row .pctravel .topic {
+      padding-top: 58%;
+      width: 58%;
+      // right: 25px;
+    }
+  
+    .topic_exploration .container .row .pctravel h3 {
+      // right: 25px;
+    }
+  
+    /* 戶外露營 */
+    .topic_exploration .container .row .camping .topic {
+      padding-top: 62%;
+      width: 62%;
+      // left: 4.375rem;
+    }
+  
+    .topic_exploration .container .row .camping h3 {
+      // left: 4.375rem;
+    }
+  
+    /* 熱門城市卡片 */
+    .popular_cities .container .map {
+      display: none;
+    }
+  
+    .recommend.row .card .cover {
+      height: 180px;
+      border-radius: 0.25rem;
+    }
+  
+    .recommend.row .card .cover h3 {
+      font-size: 1.1rem;
+    }
+  
+    .recommend.row .card .cover h4 {
+      font-size: 0.85rem;
+    }
+  }
 }
